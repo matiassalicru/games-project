@@ -1,21 +1,40 @@
-.sidebar__main{
+.sidebar__main {
     position: fixed;
-    background-color: $color_secondary;
+    left: 0;
+    border: 1px solid darken($color: $color-secondary, $amount: 10);
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    background: $color-secondary;
+    transition: all 0.4s ease;
+    width: 6em;
+    z-index: 30;
 
-    .sidebar__list{
+    &:hover {
+        width: 10em;
+    }
+
+    .sidebar__list {
+        list-style: none;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        padding: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-left: 2em;
+        margin-right: 2em;
+        padding: 0;
+        width: fit-content;
 
-        .sidebar__list-item{
-            list-style: none;
-            padding: 5px;
-            margin: 20px 5px;
+        .sidebar__list-item {
+            cursor: pointer;
+            font-size: 1.5em;
+            margin: 20px 0;
         }
+    }
+
+    .sidebar__text-list {
+        @extend .sidebar__list;
+        align-items: flex-start;
+        margin: 30px 10px;
+        font-size: 1.1em;
     }
 }

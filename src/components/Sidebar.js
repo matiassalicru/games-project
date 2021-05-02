@@ -1,20 +1,60 @@
-import React from 'react'
+import React, { useState } from 'react'
+import {
+    faAddressCard,
+    faGamepad,
+    faQuestionCircle,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Sidebar = () => {
+    const [isSidebarExtended, setIsSidebarExtended] = useState(true)
+
+    const extendSidebar = () => {
+        setTimeout(() => {
+            setIsSidebarExtended(true);
+        }, 100);
+    };
+
+    const shrinkSidebar = () => {
+        setTimeout(() => {
+            setIsSidebarExtended(false);
+        }, 100);
+    };
+
     return (
-        <aside className="sidebar__main">
-            <ul className='sidebar__list'>
-                <li className='sidebar__list-item'>
-                    <a href='/'>
-                        Games
-                    </a>
-                </li>
-                <li className='sidebar__list-item'>
-                    <a href='/'>
-                        Profile
-                    </a>
-                </li>
-            </ul>
+        <aside
+            className="sidebar__main"
+            onMouseOver={extendSidebar}
+            onMouseLeave={shrinkSidebar}
+        >
+            {
+                !isSidebarExtended ? (
+
+                    <ul className="sidebar__list">
+                        <li className="sidebar__list-item">
+                            <FontAwesomeIcon icon={faGamepad} />
+                        </li>
+                        <li className="sidebar__list-item">
+                            <FontAwesomeIcon icon={faAddressCard} />
+                        </li>
+                        <li className="sidebar__list-item">
+                            <FontAwesomeIcon icon={faQuestionCircle} />
+                        </li>
+                    </ul>
+                ) : (
+                    <ul className="sidebar__text-list">
+                        <li className="sidebar__text-list">
+                            <a href="/games/1">Games</a>
+                        </li>
+                        <li className="sidebar__text-list">
+                            <a href="/">Profile</a>
+                        </li>
+                        <li className="sidebar__text-list">
+                            <a href="/">Help</a>
+                        </li>
+                    </ul>
+                )
+            }
         </aside>
     )
 }
