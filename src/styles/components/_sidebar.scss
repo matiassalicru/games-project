@@ -1,0 +1,21 @@
+.sidebar__main{
+    position: fixed;
+    background-color: $color_secondary;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .sidebar__list{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+
+        .sidebar__list-item{
+            list-style: none;
+            padding: 5px;
+            margin: 20px 5px;
+        }
+    }
+}
