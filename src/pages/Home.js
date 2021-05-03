@@ -1,10 +1,12 @@
-import React from 'react'
-import { Sidebar } from '../components/Sidebar'
+import React from 'react';
+import { Grid } from '../components/Grid';
+import { Searchbar } from '../components/Searchbar';
 
 export const Home = () => {
     return (
-        <div>
-            
+        <div className='home__main'>
+            <Searchbar/>
+            <Grid/>
         </div>
     )
 }

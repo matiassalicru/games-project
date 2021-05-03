@@ -7,7 +7,7 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export const Sidebar = () => {
-    const [isSidebarExtended, setIsSidebarExtended] = useState(true)
+    const [isSidebarExtended, setIsSidebarExtended] = useState(false)
 
     const extendSidebar = () => {
         setTimeout(() => {
@@ -43,13 +43,13 @@ export const Sidebar = () => {
                     </ul>
                 ) : (
                     <ul className="sidebar__text-list">
-                        <li className="sidebar__text-list">
+                        <li className="sidebar__text-list-item">
                             <a href="/games/1">Games</a>
                         </li>
-                        <li className="sidebar__text-list">
+                        <li className="sidebar__text-list-item">
                             <a href="/">Profile</a>
                         </li>
-                        <li className="sidebar__text-list">
+                        <li className="sidebar__text-list-item">
                             <a href="/">Help</a>
                         </li>
                     </ul>

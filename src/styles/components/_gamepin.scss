@@ -1,0 +1,27 @@
+.gamepin__main {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid $color_primary;
+    cursor: pointer;
+    transition: 0.2s all;
+    border-radius: 0 0px 5px 5px;
+
+    .gamepin__img {
+        min-width: 250px;
+        min-height: fit-content;
+    }
+
+    .gamepin__title {
+        font-size: 1.2em;
+        color: $black;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+    &:hover {
+        box-shadow: 2px 2px 5px $color_primary;
+    }
+}

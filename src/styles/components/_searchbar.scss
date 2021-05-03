@@ -1,0 +1,27 @@
+.searchbar__main {
+    display: flex;
+    margin: 20px 0;
+
+    .searchbar__icon {
+        margin-right: 5px;
+        font-size: 1.6em;
+        color: darken($color: $color_secondary, $amount: 50);
+        cursor: pointer;
+    }
+
+    .searchbar__input {
+        width: 20em;
+        padding: 10px 15px;
+        color: darken($color: $color_secondary, $amount: 40);
+        height: 1.9em;
+        border-radius: 2em;
+        border: 1px solid $color_secondary;
+        font-size: 2em;
+        outline: none;
+
+        &::placeholder {
+            color: $color_secondary;
+            font-size: .8em;
+        }
+    }
+}

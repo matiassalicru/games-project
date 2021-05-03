@@ -4,8 +4,9 @@ import { Home } from './pages/Home'
 
 export const App = () => {
   return (
-    <div>
+    <div className="app__main">
       <Sidebar/>
+        
       <Home/>
     </div>
   )

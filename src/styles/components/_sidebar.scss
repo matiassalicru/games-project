@@ -3,7 +3,7 @@
     left: 0;
     border: 1px solid darken($color: $color-secondary, $amount: 10);
     height: 100vh;
-    background: $color-secondary;
+    background: lighten($color: $color_secondary, $amount: 10);
     transition: all 0.4s ease;
     width: 6em;
     z-index: 30;
@@ -34,7 +34,11 @@
     .sidebar__text-list {
         @extend .sidebar__list;
         align-items: flex-start;
-        margin: 30px 10px;
-        font-size: 1.1em;
+
+        .sidebar__text-list-item {
+            font-size: 1.3em;
+            margin: 20px 10px;
+            color: darken($color: $color_primary, $amount: 20)
+        }
     }
 }
