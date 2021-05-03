@@ -44,13 +44,13 @@ export const Sidebar = () => {
                 ) : (
                     <ul className="sidebar__text-list">
                         <li className="sidebar__text-list-item">
-                            <a href="/games/1">Games</a>
+                            <a href="/">Games</a>
                         </li>
                         <li className="sidebar__text-list-item">
-                            <a href="/">Profile</a>
+                            <a href="/profile">Profile</a>
                         </li>
                         <li className="sidebar__text-list-item">
-                            <a href="/">Help</a>
+                            <a href="/help">Help</a>
                         </li>
                     </ul>
                 )

@@ -1,27 +1,35 @@
 .gamepin__main {
-    margin: 5px;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid $black;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid $color_primary;
-    cursor: pointer;
+    height: 200px;
+    justify-content: space-around;
+    margin: 5px;
+    padding: 10px;
     transition: 0.2s all;
-    border-radius: 0 0px 5px 5px;
+    width: 300px;
+    background-color: $white;
 
     .gamepin__img {
-        min-width: 250px;
+        max-width: 250px;
+        max-height: 160px;
         min-height: fit-content;
     }
 
     .gamepin__title {
+        // position: absolute;
         font-size: 1.2em;
         color: $black;
         text-align: center;
         text-transform: capitalize;
+        // bottom: 1em;
     }
 
     &:hover {
         box-shadow: 2px 2px 5px $color_primary;
+        transform: scale(1.1);
     }
 }
