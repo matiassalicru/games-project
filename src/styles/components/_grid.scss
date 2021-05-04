@@ -1,8 +1,7 @@
 .grid__main {
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    // border: 1px solid red;
-    margin: 0 3em;
+    column-count: 3;
+    // column-width: 100px;
+    column-gap: 15px;
+    margin: 0 2em;
+    max-width: 80%;
 }

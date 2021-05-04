@@ -1,35 +1,25 @@
-.gamepin__main {
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid $black;
+.gamepin__main{
+    position: relative;
+}
+
+.gamepin__img {
+    width: 100%;
     cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    height: 200px;
-    justify-content: space-around;
-    margin: 5px;
-    padding: 10px;
     transition: 0.2s all;
-    width: 300px;
-    background-color: $white;
-
-    .gamepin__img {
-        max-width: 250px;
-        max-height: 160px;
-        min-height: fit-content;
-    }
-
-    .gamepin__title {
-        // position: absolute;
-        font-size: 1.2em;
-        color: $black;
-        text-align: center;
-        text-transform: capitalize;
-        // bottom: 1em;
-    }
+    border-radius: 5px;
+    position: relative;
 
     &:hover {
         box-shadow: 2px 2px 5px $color_primary;
-        transform: scale(1.1);
+        transform: scale(1.02);
     }
+}
+
+.gamepin__title{
+    position: absolute;
+    color: $white;
+    bottom: 20px;
+    left: 10%;
+    text-shadow: 2px 2px $black;;
+
 }

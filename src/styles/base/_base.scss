@@ -27,7 +27,7 @@ a {
     padding: 12px 15px;
     border: 1px solid $color-primary;
     border: none;
-    box-shadow: 1px 1px 4px 2px $color-primary;
+    box-shadow: 0px 1px 1px 1px $color-primary;
     border-radius: 7px;
     cursor: pointer;
     margin: 10px;
@@ -44,4 +44,12 @@ a {
         transform: none;
         cursor: unset;
     }
+}
+
+.loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
