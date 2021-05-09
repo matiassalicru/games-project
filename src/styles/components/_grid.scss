@@ -1,7 +1,25 @@
 .grid__main {
     column-count: 3;
-    // column-width: 100px;
     column-gap: 15px;
     margin: 0 2em;
     max-width: 80%;
+}
+
+.grid__buttons {
+    display: flex;
+    margin: 20px;
+
+    .grid_btn {
+        cursor: pointer;
+        border: 1px solid $black;
+        background: transparent;
+        padding: 10px 20px;
+        margin: 0 5px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            box-shadow: 2px 2px 5px $color_primary;
+            transform: scale(1.02);
+        }
+    }
 }

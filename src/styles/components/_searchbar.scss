@@ -1,6 +1,16 @@
 .searchbar__main {
     display: flex;
+    justify-content: center;
     margin: 20px 0;
+    width: 100%;
+
+    form {
+        label {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 
     .searchbar__icon {
         margin-right: 5px;
@@ -10,7 +20,7 @@
     }
 
     .searchbar__input {
-        width: 20em;
+        width: 80%;
         padding: 10px 15px;
         color: darken($color: $color_secondary, $amount: 40);
         height: 1.9em;
@@ -21,7 +31,7 @@
 
         &::placeholder {
             color: $color_secondary;
-            font-size: .8em;
+            font-size: 0.8em;
         }
     }
 }

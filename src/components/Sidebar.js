@@ -42,9 +42,9 @@ export const Sidebar = () => {
                         </li>
                     </ul>
                 ) : (
-                    <ul className="sidebar__text-list">
+                    <ul className="sidebar__text-list ">
                         <li className="sidebar__text-list-item">
-                            <a href="/">Games</a>
+                            <a href="/1">Games</a>
                         </li>
                         <li className="sidebar__text-list-item">
                             <a href="/profile">Profile</a>

@@ -11,7 +11,7 @@ export const App = () => {
       <Sidebar/>
         <Router>
           <Switch>
-            <Route exact path='/' component={Home}/>
+            <Route exact path='/:page' component={Home}/>
             <Route exact path='/games/:game' component={Game}/>
             <Route exact path='/profile' component={Profile}/>
           </Switch>
