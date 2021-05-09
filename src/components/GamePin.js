@@ -11,9 +11,9 @@ export const GamePin = ({ game }) => {
     }
 
     return (
-        <div className='gamepin__main ' onClick={linkToGame}>
-            <img className='gamepin__img' src={game.background_image} alt="thumbnail" />
-            <h3 className='gamepin__title'>{game.name}</h3>
+        <div className='gamepin__main animate__animated animate__fadeIn' onClick={linkToGame}>
+            <img className='gamepin__img animate__animated animate__fadeIn' src={game.background_image} alt="thumbnail" />
+            <h3 className='gamepin__title animate__animated animate__fadeIn'>{game.name}</h3>
         </div>
     )
 }

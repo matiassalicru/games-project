@@ -24,9 +24,9 @@ export const Game = () => {
         <>
             {
                 !loading ? (
-                    <div className='game__main'>
+                    <div className='game__main animate__animated animate__fadeIn'>
                         <header>
-                            <img className="game__header" src={gameDetails.background_image_additional} alt="header of the game" />
+                            <img className="game__header animate__animated animate__fadeIn" src={gameDetails.background_image_additional} alt="header of the game" />
                         </header>
                         <article className='game__description'>
                             <div className='game__description_cover'>

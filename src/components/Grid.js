@@ -17,7 +17,6 @@ export const Grid = () => {
                 setGames(data)
                 setLoading(false)
             });
-
     }, [params.page])
 
     const nextPage = () => {
@@ -32,7 +31,7 @@ export const Grid = () => {
 
     return (
         <>
-            <section className='grid__main animate__animated animate__bounce'>
+            <section className='grid__main'>
                 {
                     !loading ?
                         games.map((game, i) => {
@@ -46,7 +45,7 @@ export const Grid = () => {
             </section>
 
             { !loading && (
-                <div className='grid__buttons'>
+                <div className='grid__buttons animate__animated animate__fadeIn animate__delay-1s'>
                     <button className='grid_btn' onClick={prevPage}>Prev</button>
                     <button className='grid_btn' onClick={nextPage}>Next</button>
                 </div>

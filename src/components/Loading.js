@@ -2,7 +2,7 @@ import * as React from "react"
 
 function SvgComponent(props) {
     return (
-        <div className='loading'>
+        <div className='loading animate__animated animate__fadeOut animate__fastest'>
             <svg
                 width={44}
                 height={44}
