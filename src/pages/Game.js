@@ -11,7 +11,7 @@ export const Game = () => {
 
     useEffect(() => {
         setLoading(true)
-        fetch(`https://games-library-backend.herokuapp.com/game/${gameID.game}`)
+        fetch(`https://games-library-backend.herokuapp.com/games/game/${gameID.game}`)
             .then(res => res.json())
             .then(data => {
                 setGameDetails(data)

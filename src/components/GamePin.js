@@ -7,7 +7,7 @@ export const GamePin = ({ game }) => {
     const history = useHistory();
 
     const linkToGame = () => {
-        history.push(`/games/${game.id}`);
+        history.push(`/games/game/${game.id}`);
     }
 
     return (

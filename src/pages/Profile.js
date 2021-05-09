@@ -2,6 +2,7 @@ import React from 'react'
 import profile from '../Assets/profile.png'
 
 export const Profile = () => {
+    console.log('Im here');
     return (
         <div className='profile__main'>
             <header className='profile__header'>
